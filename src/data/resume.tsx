@@ -11,69 +11,78 @@ import { Docker } from "@/components/ui/svgs/docker";
 import { Kubernetes } from "@/components/ui/svgs/kubernetes";
 import { Java } from "@/components/ui/svgs/java";
 import { Csharp } from "@/components/ui/svgs/csharp";
+import { Unity } from "@/components/ui/svgs/unity";
+import JavaScript from "@/components/ui/svgs/javascript";
+import { Cocos } from "@/components/ui/svgs/cocos";
+import Lua from "@/components/ui/svgs/lua";
+
 
 export const DATA = {
-  name: "Dillion Verma",
-  initials: "DV",
+  name: "Kin",
+  initials: "Mr",
   url: "https://dillion.io",
-  location: "San Francisco, CA",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  location: "Malaysia/Singapore",
+  locationLink: "",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "Game developer with a genuine passion for crafting engaging gameplay.",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
-  avatarUrl: "/me.png",
+    "I specialize in software development with 8+ years of experience across game development, web applications, and mobile. As a Singapore Permanent Resident (PR), I passionate about creating engaging games and apps while embracing new challenges.",
+  avatarUrl: "/me.jpeg",
   skills: [
+    { name: "Unity", icon: Unity },
+    { name: "Cocos", icon: Cocos },
+    { name: "Javascript", icon: JavaScript },
+    { name: "Typescript", icon: Typescript },
+    { name: "Lua", icon: Lua },
     { name: "React", icon: ReactLight },
     { name: "Next.js", icon: NextjsIconDark },
-    { name: "Typescript", icon: Typescript },
     { name: "Node.js", icon: Nodejs },
     { name: "Python", icon: Python },
-    { name: "Go", icon: Golang },
-    { name: "Postgres", icon: Postgresql },
-    { name: "Docker", icon: Docker },
-    { name: "Kubernetes", icon: Kubernetes },
-    { name: "Java", icon: Java },
+    // { name: "Go", icon: Golang },
+    // { name: "Postgres", icon: Postgresql },
+    // { name: "Docker", icon: Docker },
+    // { name: "Kubernetes", icon: Kubernetes },
+    // { name: "Java", icon: Java },
     { name: "C++", icon: Csharp },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    // { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "hello@example.com",
     tel: "+123456789",
     social: {
-      GitHub: {
-        name: "GitHub",
-        url: "https://dub.sh/dillion-github",
-        icon: Icons.github,
-        navbar: true,
-      },
+      // GitHub: {
+      //   name: "GitHub",
+      //   url: "https://dub.sh/dillion-github",
+      //   icon: Icons.github,
+      //   navbar: true,
+      // },
 
-      LinkedIn: {
-        name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
-        icon: Icons.linkedin,
+      // LinkedIn: {
+      //   name: "LinkedIn",
+      //   url: "https://dub.sh/dillion-linkedin",
+      //   icon: Icons.linkedin,
+
+      //   navbar: true,
+      // },
+      whatsapp: {
+        name: "Whastapp",
+        url: "https://wa.me/60165638531",
+        icon: Icons.whatsapp,
 
         navbar: true,
       },
-      X: {
-        name: "X",
-        url: "https://dub.sh/dillion-twitter",
-        icon: Icons.x,
-
-        navbar: true,
-      },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
-        navbar: true,
-      },
+      // Youtube: {
+      //   name: "Youtube",
+      //   url: "https://wa.me/60165638531",
+      //   icon: Icons.youtube,
+      //   navbar: true,
+      // },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:oonwengkin@gmail.com",
         icon: Icons.email,
 
         navbar: false,
@@ -83,76 +92,76 @@ export const DATA = {
 
   work: [
     {
-      company: "Atomic Finance",
-      href: "https://atomic.finance",
+      company: "WTF Synergy",
+      href: "",
       badges: [],
-      location: "Remote",
-      title: "Bitcoin Protocol Engineer",
-      logoUrl: "/atomic.png",
-      start: "May 2021",
-      end: "Oct 2022",
+      location: "Malaysia",
+      title: "Senior Game Developer",
+      logoUrl: "/wtf.png",
+      start: "May 2025",
+      end: "Present",
       description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+        "Develop games using TypeScript, Node.js, C#, Unity and Cocos Creator. Contribute to core system architecture. Build responsive web interface using React.",
     },
     {
-      company: "Shopify",
+      company: "Dream Global Holdings",
       badges: [],
-      href: "https://shopify.com",
-      location: "Remote",
-      title: "Software Engineer",
-      logoUrl: "/shopify.svg",
-      start: "January 2021",
-      end: "April 2021",
+      href: "",
+      location: "Singapore",
+      title: "Game Development Engineer",
+      logoUrl: "/dream.png",
+      start: "January 2023",
+      end: "April 2025",
       description:
-        "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
+        "Collaborating with game designers, UI/UX artists, and testers to deliver a variety of casual games in line with the provided milestones. Completed 40+ mobile casual game developments (Cocos2d-x, Lua). Managed a game development team, delegating workload among 3 team members.",
     },
     {
-      company: "Nvidia",
-      href: "https://nvidia.com/",
+      company: "J Star",
+      href: "Frontend & Game Developer",
       badges: [],
-      location: "Santa Clara, CA",
+      location: "Malaysia",
       title: "Software Engineer",
-      logoUrl: "/nvidia.png",
+      logoUrl: "/jstar.jpg",
       start: "January 2020",
-      end: "April 2020",
+      end: "December 2022",
       description:
-        "Architected and wrote the entire MVP of the GeForce Now Cloud Gaming internal admin and A/B testing dashboard using React, Redux, TypeScript, and Python.",
+        "Taken on diverse responsibilities, focusing on both 2D game creation and mobile app development, while actively collaborating with clients, artists, and backend developers to deliver high-quality projects. Developed various HTML5 mini games using Unity and Cocos Creator. Developed and published a soccer app for Android and iOS using Flutter, with hands-on deployment to the Google Play Store and Apple App Store, designing the framework, integrating Firebase, collaborating with clients, and providing ongoing maintenance and updates. Built and maintained responsive websites using HTML, CSS, Bootstrap, React and JavaScript.",
     },
     {
-      company: "Splunk",
-      href: "https://splunk.com",
+      company: "Gatsby",
+      href: "",
       badges: [],
-      location: "San Jose, CA",
-      title: "Software Engineer",
-      logoUrl: "/splunk.svg",
-      start: "January 2019",
-      end: "April 2019",
+      location: "Remote",
+      title: "Full Stack Web Developer",
+      logoUrl: "/g.jpg",
+      start: "January 2023",
+      end: "December 2024",
       description:
-        "Co-developed a prototype iOS app with another intern in Swift for the new Splunk Phantom security orchestration product (later publicly demoed and launched at .conf annual conference in Las Vegas). Implemented a realtime service for the iOS app in Django (Python) and C++; serialized data using protobufs transmitted over gRPC resulting in an approximate 500% increase in data throughput.",
+        "Maintain and enhance the Gatsby Malaysia portal website using PHP and Laravel, ensuring functionality, performance, and consistency with the existing system design.",
     },
     {
-      company: "Lime",
-      href: "https://li.me/",
+      company: "Experian",
+      href: "",
       badges: [],
-      location: "San Francisco, CA",
+      location: "Malaysia",
       title: "Software Engineer",
-      logoUrl: "/lime.svg",
+      logoUrl: "/experian.png",
       start: "January 2018",
-      end: "April 2018",
+      end: "September 2019",
       description:
-        "Proposed and implemented an internal ruby API for sending/receiving commands to scooters over LTE networks. Developed a fully automated bike firmware update system to handle asynchronous firmware updates of over 100,000+ scooters worldwide, and provide progress reports in real-time using React, Ruby on Rails, PostgreSQL and AWS EC2 saving hundreds of developer hours.",
+        "Developed an automated solution using Scala to extract data from various types of credit report documents, significantly enhancing productivity. Utilize big data technology such as Spark, Hadoop.",
     },
     {
-      company: "Mitre Media",
-      href: "https://mitremedia.com/",
+      company: "Kakitangan",
+      href: "",
       badges: [],
-      location: "Toronto, ON",
+      location: "Malaysia",
       title: "Software Engineer",
-      logoUrl: "/mitremedia.png",
-      start: "May 2017",
-      end: "August 2017",
+      logoUrl: "/kakitangan.png",
+      start: "April 2017",
+      end: "December 2017",
       description:
-        "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
+        "Developed and maintain backend features for an HR and payroll platform using Python and Django",
     },
   ],
   education: [
@@ -191,21 +200,630 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "Paper Fold",
+      href: "",
+      dates: "",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "A simple puzzle game where players fold paper to reveal the complete picture.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        
+      ],
+      links: [
+        {
+          type: "Casual Game",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/casual/15.png",
+      image_h: "148p",
+      video:
+        "",
+    },
+    {
+      title: "Jumper",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A cute vertical platformer where players jump between floating platforms, collect coins and power-ups, avoid monsters.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "Casual Game",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/casual/30.png",
+      image_h: "148p",
+      video:
+        "",
+    },
+    {
+      title: "Higher!",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A physics-based arcade game where players launch a monster skyward using touch controls. Player can customize the type and number of attached orbs to reach greater heights and complete challenging levels.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "Casual Game",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/casual/4.png",
+      image_h: "148p",
+      video:
+        "",
+    },
+    {
+      title: "Galaxy Shootout",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A fast-paced 2-player arcade shooter where players race against time to blast colorful space monsters. Match your shots to the correct targets, earn points, and outscore your opponent before time runs out.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "Casual Game",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/casual/1.png",
+      image_h: "148p",
+      video:
+        "",
+    },
+    {
+      title: "Perfect Cut",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A casual reflex-based game that challenges players to cut moving objects with precise timing, testing speed, accuracy, and concentration.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "Casual Game",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/casual/18.png",
+      image_h: "148p",
+      video:
+        "",
+    },
+    {
+      title: "Monster Maze",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A grid-based puzzle adventure where players carefully navigate through dangerous paths, avoid monsters, and reach the goal using strategic movement.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "Casual Game",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/casual/10.png",
+      image_h: "148p",
+      video:
+        "",
+    },
+    {
+      title: "Math Archer",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A casual educational game that combines archery combat with arithmetic puzzles. Players solve equations to power their attacks, defeat monsters, and progress through increasingly challenging stages.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "Casual Game",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/casual/7.png",
+      image_h: "148p",
+      video:
+        "",
+    },
+    {
+      title: "Mecha Climber",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A climbing arcade game where players control multiple mechanical claws to scale walls and reach greater heights.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "Casual Game",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/casual/28.png",
+      image_h: "148p",
+      video:
+        "",
+    },
+    {
+      title: "Bug Cleanup",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A casual pest-control game where players use various tools to eliminate flies and complete cleanup objectives. The gameplay combines quick reflexes, resource management, and progressive challenges to keep environments free from pests.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "Casual Game",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/casual/5.png",
+      image_h: "148p",
+      video:
+        "",
+    },
+    {
+      title: "Puzzle Bricks",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A grid-based puzzle game that challenges players to strategically rearrange colored blocks to meet level objectives before time runout.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "Casual Game",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/casual/3.png",
+      image_h: "48p",
+      video:
+        "",
+    },
+    {
+      title: "Arcane Deck",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A multiplayer card game where players strategically use action cards, manage resources, and outplay opponents to survive until the end.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "Casual Game",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/casual/33.png",
+      image_h: "48p",
+      video:
+        "",
+    },
+    {
+      title: "Kitty Puzzle",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A casual puzzle game that challenges players to rotate interconnected rings, untangle complex arrangements, and remove all rings from the board.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "Casual Game",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/casual/27.png",
+      image_h: "48p",
+      video:
+        "",
+    },
+     {
+      title: "Songkran",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A multiplayer animal-themed betting game where players place wagers on various animals and earn rewards based on the winning result.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "IGaming",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/igaming/1.png",
+      image_h: "48p",
+      video:
+        "",
+    },
+    {
+      title: "Raya Packets",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A luck-based bonus game where players choose envelopes to uncover hidden rewards. Each pick offers a chance to win multipliers, bonus payouts, or special prizes.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "IGaming",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/igaming/2.png",
+      image_h: "48p",
+      video:
+        "",
+    },
+    {
+      title: "Fortune Packet",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A Chinese New Year-themed pick-and-win bonus game featuring red packet selections, randomized rewards, and animated prize reveals inspired by traditional festive celebrations.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "IGaming",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/igaming/3.png",
+      image_h: "48p",
+      video:
+        "",
+    },
+    {
+      title: "Fishing Frenzy",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A fishing-themed arcade game that combines luck and strategy as players catch various fish with different reward multipliers. Rare catches offer higher payouts and greater excitement.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "IGaming",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/igaming/4.png",
+      image_h: "48p",
+      video:
+        "",
+    },
+    {
+      title: "Go Monkey",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A monkey-themed prediction game where players place bets on different monkeys and outcomes, then watch the results reveal winning combinations and payouts.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "IGaming",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/igaming/5.png",
+      image_h: "48p",
+      video:
+        "",
+    },
+    {
+      title: "Treasure Escape",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A crime-themed pick-and-win game where players search a building for valuable loot. Each selection can uncover rewards, collectibles, or the hidden burglar, creating a balance of risk and reward.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "IGaming",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/igaming/7.png",
+      image_h: "48p",
+      video:
+        "",
+    },
+    {
+      title: "In Between",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A poker card prediction game where players bet on whether the next card's value will fall between two revealed cards.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "IGaming",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/igaming/10.jpg",
+      image_h: "48p",
+      video:
+        "",
+    },
+    {
+      title: "Poker Card Game",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A poker-inspired card game where players bet on card outcomes and earn rewards through winning combinations.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "IGaming",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/igaming/11.jpg",
+      image_h: "48p",
+      video:
+        "",
+    },
+    {
+      title: "Fortune Reveal",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A Chinese New Year-themed lucky draw game featuring symbol reveals, multiplier rewards, bonus wheels, and prize collection mechanics that create an exciting reward-driven experience.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "IGaming",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/igaming/12.jpg",
+      image_h: "48p",
+      video:
+        "",
+    },
+    {
+      title: "DJ Fortune",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A DJ-inspired 3x3 slot game that combines vibrant visuals, animated characters, and rewarding bonus mechanics. Players spin reels to collect winning combinations and unlock powerful multipliers.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "Slot",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/slot/1.jpg",
+      image_h: "108p",
+      video:
+        "",
+    },
+    {
+      title: "Dragon Scroll",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A dragon-themed slot game where players spin to match dragon symbols and unlock multiplier rewards.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "Slot",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/slot/3.jpg",
+      image_h: "108p",
+      video:
+        "",
+    },
+    {
+      title: "Go High Rocket",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A rocket-themed slot game where players launch rockets and aim for higher multiplier rewards.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "Slot",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/slot/4.jpg",
+      image_h: "108p",
+      video:
+        "",
+    },
+    {
+      title: "SurePay Simple",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "An arcade multiplier game where players spin for random rewards and high-value multipliers.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "Arcade",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/slot/5.jpg",
+      image_h: "108p",
+      video:
+        "",
+    },
+    {
+      title: "SurePay",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "An arcade multiplier game where players spin for random rewards and high-value multipliers.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "Arcade",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/slot/6.jpg",
+      image_h: "108p",
+      video:
+        "",
+    },
+    {
+      title: "Goal4Fun",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A cross-platform sports betting application built with Flutter for iOS and Android. The app provides live match information, real-time odds updates, handicap betting, over/under markets, and account management features through a responsive mobile interface.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "Mobile App",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/app/1.png",
+      image_h: "108p",
+      video:
+        "",
+    },
+    {
+      title: "Speed Demon",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A racing-themed 5x4 slot game where players spin for multipliers, bonus features, and high-speed rewards inspired by street racing culture.",
+      technologies: [
+        
+      ],
+      links: [
+        {
+          type: "Slot",
+          href: "https://chatcollect.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/slot/2.jpg",
+      image_h: "56p",
+      video:
+        "",
+    },
+    {
+      title: "Lobby Website",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "A website created by HTML, CSS, Boostrap, Javascript",
+      technologies: [
+        
       ],
       links: [
         {
@@ -214,104 +832,34 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "/images/website/1.jpg",
+      image_h: "56p",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+        "",
     },
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      title: "Lobby Website 2",
+      href: "",
+      dates: "",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "A website created by HTML, CSS, Boostrap, Javascript",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        
       ],
       links: [
         {
           type: "Website",
-          href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
-    },
-    {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
-      active: true,
-      description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
-    },
-    {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
-      active: true,
-      description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://automatic.chat",
+          href: "https://chatcollect.com",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "/images/website/2.jpg",
+      image_h: "56p",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+        "",
     },
+    
   ],
   hackathons: [
     {

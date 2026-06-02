@@ -8,7 +8,7 @@ import Link from "next/link";
 import { useState } from "react";
 import Markdown from "react-markdown";
 
-function ProjectImage({ src, alt }: { src: string; alt: string }) {
+function ProjectImage({ src, alt, image_h }: { src: string; alt: string, image_h?: string }) {
   const [imageError, setImageError] = useState(false);
 
   if (!src || imageError) {
@@ -19,7 +19,7 @@ function ProjectImage({ src, alt }: { src: string; alt: string }) {
     <img
       src={src}
       alt={alt}
-      className="w-full h-48 object-cover"
+      className={`w-full ${image_h ? image_h : "h-48"} object-cover`}
       onError={() => setImageError(true)}
     />
   );
@@ -33,6 +33,7 @@ interface Props {
   tags: readonly string[];
   link?: string;
   image?: string;
+  image_h?: string;
   video?: string;
   links?: readonly {
     icon: React.ReactNode;
@@ -50,6 +51,7 @@ export function ProjectCard({
   tags,
   link,
   image,
+  image_h,
   video,
   links,
   className,
@@ -62,12 +64,12 @@ export function ProjectCard({
       )}
     >
       <div className="relative shrink-0">
-        <Link
+        {/* <Link
           href={href || "#"}
           target="_blank"
           rel="noopener noreferrer"
           className="block"
-        >
+        > */}
           {video ? (
             <video
               src={video}
@@ -78,29 +80,29 @@ export function ProjectCard({
               className="w-full h-48 object-cover"
             />
           ) : image ? (
-            <ProjectImage src={image} alt={title} />
+            <ProjectImage src={image} alt={title} image_h={image_h} />
           ) : (
             <div className="w-full h-48 bg-muted" />
           )}
-        </Link>
+        {/* </Link> */}
         {links && links.length > 0 && (
           <div className="absolute top-2 right-2 flex flex-wrap gap-2">
             {links.map((link, idx) => (
-              <Link
-                href={link.href}
-                key={idx}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => e.stopPropagation()}
-              >
+              // <Link
+              //   href={link.href}
+              //   key={idx}
+              //   target="_blank"
+              //   rel="noopener noreferrer"
+              //   onClick={(e) => e.stopPropagation()}
+              // >
                 <Badge
                   className="flex items-center gap-1.5 text-xs bg-black text-white hover:bg-black/90"
                   variant="default"
                 >
-                  {link.icon}
+                  {/* {link.icon} */}
                   {link.type}
                 </Badge>
-              </Link>
+              // </Link>
             ))}
           </div>
         )}
@@ -111,7 +113,7 @@ export function ProjectCard({
             <h3 className="font-semibold">{title}</h3>
             <time className="text-xs text-muted-foreground">{dates}</time>
           </div>
-          <Link
+          {/* <Link
             href={href || "#"}
             target="_blank"
             rel="noopener noreferrer"
@@ -119,7 +121,7 @@ export function ProjectCard({
             aria-label={`Open ${title}`}
           >
             <ArrowUpRight className="h-4 w-4" aria-hidden />
-          </Link>
+          </Link> */}
         </div>
         <div className="text-xs flex-1 prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
           <Markdown>{description}</Markdown>

@@ -9,7 +9,7 @@ export default function ContactSection() {
         <span className="text-background text-sm font-medium">Contact</span>
       </div>
       <div className="absolute inset-0 top-0 left-0 right-0 h-1/2 rounded-xl overflow-hidden">
-        <FlickeringGrid
+        {/* <FlickeringGrid
           className="h-full w-full"
           squareSize={2}
           gridGap={2}
@@ -17,24 +17,32 @@ export default function ContactSection() {
             maskImage: "linear-gradient(to bottom, black, transparent)",
             WebkitMaskImage: "linear-gradient(to bottom, black, transparent)",
           }}
-        />
+        /> */}
       </div>
       <div className="relative flex flex-col items-center gap-4 text-center">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
           Get in Touch
         </h2>
         <p className="mx-auto max-w-lg text-muted-foreground text-balance">
-          Want to chat? Just shoot me a dm{" "}
+          Want to chat? Feel free to email me at {" "}
           <Link
-            href={DATA.contact.social.X.url}
+            href={DATA.contact.social.email.url}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
           >
-            with a direct question on twitter
+          oonwengkin@gmail.com
           </Link>{" "}
-          and I&apos;ll respond whenever I can. I will ignore all
-          soliciting.
+          or send me a direct message on {" "}
+          <Link
+            href={DATA.contact.social.whatsapp.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
+          >
+            WhatsApp
+          </Link>{" "}
+          and I&apos;ll respond whenever I can.
         </p>
       </div>
     </div>
