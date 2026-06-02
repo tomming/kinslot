@@ -120,7 +120,7 @@ export const DATA = {
       href: "Frontend & Game Developer",
       badges: [],
       location: "Malaysia",
-      title: "Software Engineer",
+      title: "Frontend & Game Developer",
       logoUrl: "/jstar.jpg",
       start: "January 2020",
       end: "December 2022",
