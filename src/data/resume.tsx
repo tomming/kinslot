@@ -24,7 +24,7 @@ export const DATA = {
   location: "Malaysia/Singapore",
   locationLink: "",
   description:
-    "Game developer with a genuine passion for crafting engaging gameplay.",
+    "Game developer with a genuine passion for deliver immersive gaming experiences.",
   summary:
     "I specialize in software development with 8+ years of experience across game development, web applications, and mobile. As a Singapore Permanent Resident (PR), I passionate about creating engaging games and apps while embracing new challenges.",
   avatarUrl: "/me.jpeg",

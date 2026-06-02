@@ -31,28 +31,6 @@ export default function ProjectsSection() {
                     </div>
                 </div>
                 <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 max-w-[800px] mx-auto auto-rows-fr">
-                    {DATA.projects.filter((project) => project.image_h==='148p').map((project, id) => (
-                        <BlurFade
-                            key={project.title}
-                            delay={BLUR_FADE_DELAY * 12 + id * 0.05}
-                            className="h-full"
-                        >
-                            <ProjectCard
-                                href={project.href}
-                                key={project.title}
-                                title={project.title}
-                                description={project.description}
-                                dates={project.dates}
-                                tags={project.technologies}
-                                image={project.image}
-                                image_h={project.image_h}
-                                video={project.video}
-                                links={project.links}
-                            />
-                        </BlurFade>
-                    ))}
-                </div>
-                <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 max-w-[800px] mx-auto auto-rows-fr">
                     {DATA.projects.filter((project) => project.image_h==='48p').map((project, id) => (
                         <BlurFade
                             key={project.title}
@@ -118,6 +96,29 @@ export default function ProjectsSection() {
                         </BlurFade>
                     ))}
                 </div>
+                <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 max-w-[800px] mx-auto auto-rows-fr">
+                    {DATA.projects.filter((project) => project.image_h==='148p').map((project, id) => (
+                        <BlurFade
+                            key={project.title}
+                            delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                            className="h-full"
+                        >
+                            <ProjectCard
+                                href={project.href}
+                                key={project.title}
+                                title={project.title}
+                                description={project.description}
+                                dates={project.dates}
+                                tags={project.technologies}
+                                image={project.image}
+                                image_h={project.image_h}
+                                video={project.video}
+                                links={project.links}
+                            />
+                        </BlurFade>
+                    ))}
+                </div>
+                
             </div>
         </section>
     );
